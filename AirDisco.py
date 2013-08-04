@@ -24,7 +24,7 @@
 #  python AirDisco.py stop  (to stop the daemon)
 #  python AirDisco.py restart (to restart the daemon)
 #
-# license: CC-BY SA 3.0 - Creative commons share-alike 3.0
+# GNU GENERAL PUBLIC LICENSE
 # use this code however you'd like, just keep this license and
 # attribute. Let me know if you make hugely, awesome, great changes.
 #

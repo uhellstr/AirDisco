@@ -17,9 +17,14 @@ You have to make sure the following is installed before running AirDisco.
 
 To install necessary libraries and programs except LedBorg and Shairport Airplay Emulator (See above links) do the following:
 
+Install:
+
 sudo apt-get update 
+
 sudo apt-get upgrade
+
 sudo apt-get install python-daemon
+
 sudo apt-get install top
 
 Usage:

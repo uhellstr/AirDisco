@@ -109,7 +109,7 @@ class Disco():
 				LedBorg.close()
 	
 ####################################################
-# main
+# main: Init daemon and handle exit
 ####################################################
 if __name__ == "__main__":
     atexit.register(exit_handler)

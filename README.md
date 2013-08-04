@@ -44,3 +44,7 @@ Note:
 	./AirDisco.py start|stop|restart
 	
 	So strongly recommend that you use the python AirDisco.py start|stop|restart medthod as described above.
+	
+RELEASES
+	
+	2013-08-04 First upload of code and some minor fixes.

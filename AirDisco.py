@@ -40,10 +40,12 @@ import atexit
 from subprocess import *
 from daemon import runner
   				
+
 ####################################################
-# Turn of all LED's
+# Handles extra funtionality whenever the daemon
+# is stopped.
 ####################################################
-def turn_off_led():
+def exit_handler():
     red = 0
     green = 0
     blue = 0
@@ -51,13 +53,6 @@ def turn_off_led():
     LedBorg = open('/dev/ledborg', 'w')
     LedBorg.write(color)
     LedBorg.close()
-
-####################################################
-# Handles extra funtionality whenever the daemon
-# is stopped.
-####################################################
-def exit_handler():
-	turn_off_led
 
 ####################################################
 # This is where it is where we do the disco lights
@@ -105,7 +100,13 @@ class Disco():
 				LedBorg.write(color)
 				LedBorg.close()
             else:
-				turn_off_led
+				red = 0
+				green = 0
+				blue = 0
+				color = "%d%d%d" % (red, green, blue)
+				LedBorg = open('/dev/ledborg', 'w')
+				LedBorg.write(color)
+				LedBorg.close()
 	
 ####################################################
 # main

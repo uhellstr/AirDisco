@@ -1,7 +1,7 @@
 AirDisco
 ========
 
-Python Daemon that works with LedBorg and hairtunes (Airplay) on the Raspberry Pi.
+Python Daemon that works with LedBorg and Shariport Airplay Emulator on the Raspberry Pi.
 
 To use AirDisco you will need the following:
 
@@ -17,7 +17,8 @@ You have to make sure the following is installed before running AirDisco.
 
 To install necessary libraries and programs except LedBorg and Shairport Airplay Emulator (See above links) do the following:
 
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update 
+sudo apt-get upgrade
 sudo apt-get install python-daemon
 sudo apt-get install top
 
@@ -28,6 +29,8 @@ Usage:
 	python AirDisco.py start -- to startup the daemon
 	python AirDisco.py stop  -- to stop the daemon
 	python AirDisco.py restart -- to restart the daemon
+	
+	After starting up the daemon enjoy your "disco lights" when streaming music from iTunes, phone or tablet that are Airplay compatible.
 	
 Note:
 
